@@ -24,8 +24,7 @@ namespace Symantec.CWoC {
 		protected Label lbl_form_title;
 		protected Label lbl_serialnumber;
 		protected Label lbl_signature;
-		protected Label lbl_lorem_ipsum;
-		protected Label lbl_lorem_ipsum2;
+		protected Label lbl_lorem_ipsum;		
 		protected Label assettype;
 		protected Label assettag;
 		protected Label assettag2;
@@ -48,7 +47,7 @@ namespace Symantec.CWoC {
 			lbl_deliverydate.Text = l10n.get("$lbl_deliverydate");
 			lbl_signature.Text = l10n.get("$lbl_signature");
 			lbl_lorem_ipsum.Text = l10n.lorem_ipsum;
-			lbl_lorem_ipsum2.Text = l10n.lorem_ipsum;
+			
 
 			/* Get computed data */
 			if (!base.IsPostBack && (base.Request.QueryString["itemguid"] != null)) {
@@ -93,6 +92,7 @@ namespace Symantec.CWoC {
 			}
 		}
 
+
 		private string customtypes_sql = @"
 	SELECT va.[Asset Type], va.Manufacturer, va.Model, va.[Serial Number], vi.Name, o.[User Name]
 	  FROM vAsset va
@@ -104,7 +104,7 @@ namespace Symantec.CWoC {
 	   AND va._ResourceGuid = '{1}'";
 	   
 		public static class l10n {
-			public static string lorem_ipsum = @"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam ac eleifend enim. In dignissim leo id metus elementum interdum. Vivamus commodo vestibulum erat. Cras ultrices erat aliquet placerat iaculis. Interdum et malesuada fames ac ante ipsum primis in faucibus. In hac habitasse platea dictumst. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nam vitae enim dictum, efficitur odio eu, luctus risus. Nulla nec suscipit diam. Fusce in libero tortor. Curabitur vehicula justo quam. Cras convallis purus urna, ut porttitor nulla finibus ac. Maecenas bibendum fermentum metus sodales molestie. Maecenas eros massa, vestibulum nec vestibulum at, congue vitae justo.";
+			public static string lorem_ipsum = @"Person who sign the form is fully responsible for the received device. All Employees who have access to information and communication resources of Company are obligated to fulfill rules of CHARTER FOR CORRECT USAGE OF NEW TECHNOLOGIES OF INFORMATION AND COMMUNICATION.";
 
 			public static string get(String key) {
 				string locale = CultureInfo.CurrentCulture.ToString();

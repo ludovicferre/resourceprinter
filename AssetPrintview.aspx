@@ -28,13 +28,19 @@
 		<td><asp:Label id="lbl_manufacturer" runat="server"/>: </td><td><asp:Label id="manufacturer" runat="server" /></td>
 	</tr>
 	<tr height="40px">
-		<td><asp:Label id="lbl_model" runat="server"/></td><td><asp:Label id="model" runat="server" /></td>
+		<td><asp:Label id="lbl_model" runat="server"/>: </td><td><asp:Label id="model" runat="server" /></td>
 	</tr>
 	<tr height="40px">
-		<td><asp:Label id="lbl_serialnumber" runat="server"/></td><td><asp:Label id="serialnumber" runat="server" /></td>
+		<td><asp:Label id="lbl_serialnumber" runat="server"/>: </td><td><asp:Label id="serialnumber" runat="server" /></td>
 	</tr>
 	<tr height="40px">
-		<td><asp:Label id="lbl_owner" runat="server"/>:</td><td><asp:Label id="username" runat="server" /></td>
+		<td><asp:Label id="lbl_owner" runat="server"/>: </td><td><asp:Label id="username" runat="server" /></td>
+	</tr>
+	<tr height="40px">
+		<td><asp:Label id="lbl_comment" runat="server"/>: </td><td><asp:Label id="comment" runat="server" /></td>
+	</tr>
+	<tr height="40px">
+		<td><asp:Label id="lbl_phonenumber" runat="server"/></td><td><asp:Label id="phonenumber" runat="server" /></td>
 	</tr>
 </table>
 </blockquote>
@@ -48,9 +54,6 @@
 <br/>
 <table  style="border:1px solid black; width:80%; height:120px; vertical-align:top;" align="center">
 <tr border="0px"><td><asp:Label id="lbl_lorem_ipsum" runat="server"/></td><tr>
-</table><br/>
-<table  style="border:1px solid black; width:80%; height:120px; vertical-align:top;" align="center">
-<tr border="0px"><td><asp:Label id="lbl_lorem_ipsum2" runat="server"/></td><tr>
 </table>
 </body></html>
 </html>
